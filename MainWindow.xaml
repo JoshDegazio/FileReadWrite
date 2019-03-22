@@ -1,0 +1,21 @@
+﻿<Window x:Class="FilePractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilePractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="This program can create and load files."/>
+        <RadioButton Content="Create File" Checked="CreateFile_Checked"/>
+        <RadioButton Content="Load File" Checked="LoadFile_Checked"/>
+
+        <Label Content="Pick an option above" x:Name="lbl_Operation"/>
+        <TextBox Text="Enter File Name Here" x:Name="inpt_FileName"/>
+        <TextBox Text="Enter Text For File Here / Text From File Will Appear Here" x:Name="inpt_FileText"/>
+        <Button Content="Pick an option above" x:Name="btn_Operation" Click="Btn_Operation_Click"/>
+        <TextBlock Text="" x:Name="outpt_Status"/>
+
+    </StackPanel>
+</Window>
